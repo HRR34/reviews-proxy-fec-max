@@ -3,32 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="http://localhost:3333/styles.css">
+    <link rel="stylesheet" href="http://localhost:3332/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css"></link>
     <title>FEC Demo</title>
   </head>
   <body>
-    <div id="Info"></div>
-    <div id="CountDown"></div>
-    <div id="Related"></div>
+    <div id="Instructor"></div>
+    <div id="TopSection"></div>
+    <div id="CourseContent"></div>
     <div id="Reviews"></div>
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:8000/app.js"></script>
+    <script src="http://localhost:3332/bundle.js"></script>
+    <script src="http://localhost:7777/bundle.js"></script>
+    <script src="http://localhost:3333/bundle.js"></script>
+    <script src="http://localhost:8000/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(
-        React.createElement(Info),
-        document.getElementById('Info')
+        React.createElement(Instructor),
+        document.getElementById('Instructor')
       );
       ReactDOM.render(
-        React.createElement(CountDown),
-        document.getElementById('CountDown')
+        React.createElement(TopSection),
+        document.getElementById('TopSection')
       );
       ReactDOM.render(
-        React.createElement(Related),
-        document.getElementById('Related')
+        React.createElement(CourseContent),
+        document.getElementById('CourseContent')
       );
       ReactDOM.render(
         React.createElement(Reviews),
