@@ -1,3 +1,28 @@
 .CourseContentDisplay {
     display: inline-block;
 }
+
+.ReviewsDisplay {
+    display: inline-block;
+    float: left;
+    width: 90%;
+    padding-left: 80px;
+}
+
+.CourseContentDisplay {
+    display: inline-block;
+    float: left;
+    margin-left: 0px;
+    width: 80%;
+    padding-top: 400px;
+    padding-left: 80px;
+}
+
+.InstructorDisplay {
+    display: inline-block;
+    padding-left: 80px;
+}
+
+.starsBox {
+    color:yellow;
+}
