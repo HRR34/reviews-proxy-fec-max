@@ -13,7 +13,7 @@ const options = {
   changeOrigin: true, 
   router: {
     '/instructors':'http://localhost:3332', 
-    '/reviews':'http://68.183.60.166:8000', 
+    '/reviews':'http://localhost:8000', 
     '/repos':'http://localhost:3333',
     '/':'http://localhost:7777', 
   }
