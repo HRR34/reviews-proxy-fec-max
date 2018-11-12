@@ -13,7 +13,7 @@ const options = {
   router: {
     '/instructors':'http://68.183.60.166:3332', 
     '/reviews':'http://68.183.60.166:8000/', 
-    '/repos':'http://localhost:3333',
+    '/repos':'http://ec2-54-83-163-142.compute-1.amazonaws.com/',
     '/':'http://54.152.27.113:80', 
   }
 }

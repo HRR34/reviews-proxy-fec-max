@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
-    <!-- <link rel="stylesheet" href="http://68.183.60.166:3333/styles.css"> -->
+    <link rel="stylesheet" href="http://ec2-54-83-163-142.compute-1.amazonaws.com/styles.css">
     <link rel="stylesheet" href="http://68.183.60.166:3332/style.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css"></link>
     <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css"></link>
@@ -20,7 +20,7 @@
     <script src="/lib/react-dom.development.js"></script>
     <script src="http://68.183.60.166:3332/bundle.js"></script>
     <!-- <script src="http://54.152.27.113:80/bundle.js"></script> -->
-    <!-- <script src="http://68.183.60.166:3333/bundle.js"></script> -->
+    <script src="http://ec2-54-83-163-142.compute-1.amazonaws.com/bundle.js"></script>
     <script src="http://68.183.60.166:8000/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
@@ -32,10 +32,10 @@
       //   React.createElement(TopSection),
       //   document.getElementById('TopSection')
       // );
-      // ReactDOM.render(
-      //   React.createElement(CourseContent),
-      //   document.getElementById('CourseContent')
-      // );
+      ReactDOM.render(
+        React.createElement(CourseContent),
+        document.getElementById('CourseContent')
+      );
       ReactDOM.render(
         React.createElement(Reviews),
         document.getElementById('Reviews')
