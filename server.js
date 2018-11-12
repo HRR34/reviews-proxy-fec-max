@@ -14,7 +14,7 @@ const options = {
     '/instructors':'http://68.183.60.166:3332', 
     '/reviews':'http://68.183.60.166:8000/', 
     '/repos':'http://localhost:3333',
-    '/':'http://localhost:7777', 
+    '/':'http://54.152.27.113', 
   }
 }
 
