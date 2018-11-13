@@ -3,32 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="http://ec2-54-83-163-142.compute-1.amazonaws.com/styles.css">
+    <link rel="stylesheet" href="http://68.183.60.166:3332/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css"></link>
+    <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css"></link>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"></link>
     <title>FEC Demo</title>
   </head>
   <body>
-    <div id="Info"></div>
-    <div id="CountDown"></div>
-    <div id="Related"></div>
-    <div id="Reviews"></div>
+    <h1>FEC DEMO</h1>
+    <div id="Topsection"></div>
+    <div id="CourseContent" class="CourseContentDisplay"></div>
+    <div id="Instructor" class="InstructorDisplay"></div>       
+    <div id="Reviews" class="ReviewsDisplay"></div>
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:8000/app.js"></script>
+    <script src="http://68.183.60.166:3332/bundle.js"></script>
+    <script src="http://54.152.27.113:80/bundle.js"></script>
+    <script src="http://ec2-54-83-163-142.compute-1.amazonaws.com/bundle.js"></script>
+    <script src="http://68.183.60.166:8000/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(
-        React.createElement(Info),
-        document.getElementById('Info')
+        React.createElement(Instructor),
+        document.getElementById('Instructor')
       );
       ReactDOM.render(
-        React.createElement(CountDown),
-        document.getElementById('CountDown')
+        React.createElement(Topsection),
+        document.getElementById('Topsection')
       );
       ReactDOM.render(
-        React.createElement(Related),
-        document.getElementById('Related')
+        React.createElement(CourseContent),
+        document.getElementById('CourseContent')
       );
       ReactDOM.render(
         React.createElement(Reviews),
